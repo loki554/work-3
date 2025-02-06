@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Завершённые заказы</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/e29265e664.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=8aaf733c-c6a1-4208-9624-04a943d94940" type="text/javascript"></script>
+    <script src="multiroute_driving.js" type="text/javascript"></script>
+</head>
+
+<style>
+::placeholder {
+    color: #000;
+    opacity: .6;
+}
+body {
+    overflow: hidden;
+}
+</style>
+
+<body>
+    <section class="work-navbar">
+        <div class="work-navbar-logo">
+            <img src="img/logo1.png" alt="Nord-Line">
+        </div>
+        <div class="work-navbar-upper-buttons">
+            <div class="work-navbar-upper-button-active">
+                <button class="btn"><i class="fa-solid fa-truck-fast"></i>Заказы</button>
+            </div>
+            <form action="work-portal-transporters.html">
+                <button class="btn"><i class="fa-solid fa-plane"></i>Перевозчики</button>
+            </form>
+            <form action="work-portal-stats.html">
+                <button class="btn"><i class="fa-solid fa-chart-line"></i>Статистика</button>
+            </form>
+        </div>
+        <div class="work-navbar-lower-buttons">
+            <button class="btn"><i class="fa-solid fa-circle-half-stroke"></i>Светлая/тёмная тема</button>
+            <button class="btn"><i class="fa-solid fa-right-from-bracket"></i>Выйти</button>
+        </div>
+    </section>
+
+    <section class="work-top-bar">
+        <div class="work-search-bar">
+            <h1>ОСНОВНАЯ СТРАНИЦА</h1>
+            <input class="orders-search-bar" type="search" id="searchInput" placeholder="Поиск по номеру, названию заказа">
+            <h1>ДОБРО ПОЖАЛОВАТЬ, TEST
+            <br>ВАША РОЛЬ - СОТРУДНИК
+            </h1>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </section>
+
+    <section class="work-order-type-bar">
+        <div class="work-order-type">
+            <h1>ЗАКАЗЫ</h1>
+            <div class="work-order-type-button">
+                <form action="work-portal-pending.html">
+                    <button>В обработке</button>
+                </form>
+                <form action="work-portal-main.html">
+                    <button>В процессе</button>
+                </form>
+                <div class="work-order-type-button-active">
+                    <button>Завершённые</button>
+                </div>
+            </div>
+
+            <div class="work-order-filter">
+                <button id="sortButton" class="work-order-alphabet-filter"><i class="fa-solid fa-arrow-down-a-z"></i>А-Я</button>
+                <div class="work-order-dropdown-menu">
+                    <button class="work-order-dropdown-button"><i class="fa-solid fa-filter"></i>Фильтр</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="work-orders">
+        <div class="work-orders-list">
+            <div class="work-order-container">
+                <div class="work-order-basic-info">
+                    <div class="work-order-image">
+                        <img src="img/blank-white-7sn5o1woonmklx1h.jpg" alt="">
+                    </div>
+                    <div class="work-order-name-and-id">
+                        <h1>FREIGHT-EGF456</h1>
+                        <h2 id="orderId">658231<button class="work-order-copy-id-button" id="copyButton"><i class="fa-solid fa-copy"></i></button></h2>
+                        <h2>10050 руб.</h2>
+                        <h2>Перевозчик 2</h2>
+                    </div>
+                </div>
+                <div class="work-order-info">
+                    <h2>Заказчик:</h2>
+                    <h1>Чаплин Александр Андреевич</h1>
+                    <h2>Номер телефона:</h2>
+                    <h1>89608886952</h1>
+                    <h2>Тип:</h2>
+                    <h1>Наземный груз</h1>
+                    <h2>Груз:</h2>
+                    <h1>Ткань</h1>
+                    <h2>Точка отправки:</h2>
+                    <h1 class="h1ReferencePointA">Россия, г. Барнаул, Ленинская ул., д. 15</h1>
+                    <h2>Точка прибытия:</h2>
+                    <h1 class="h1ReferencePointB">Россия, г. Омск, Кирова ул., д. 19</h1>
+                    <h2>Завершён:</h2>
+                    <h1>29.05.2024 12:31:56</h2>
+                </div>
+            </div>
+        </div>
+        <div class="work-orders-location">
+            <div class="work-orders-location-container">
+                <h1>...</h1>
+                <div id="map"></div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

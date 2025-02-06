@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Администратор - Заказы</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/e29265e664.js" crossorigin="anonymous"></script>
+    <script src="script-pending.js"></script>
+</head>
+
+<style>
+::placeholder {
+    color: #000;
+    opacity: .6;
+}
+body {
+    overflow: hidden;
+}
+</style>
+
+<body>
+    <section class="work-navbar">
+        <div class="work-navbar-logo">
+            <img src="img/logo1.png" alt="Nord-Line">
+        </div>
+        <div class="work-navbar-upper-buttons">
+            <div class="work-navbar-upper-button-active">
+                <button class="btn"><i class="fa-solid fa-truck-fast"></i>Все заказы</button>
+            </div>
+            <form action="admin-transporters.html">
+                <button class="btn"><i class="fa-solid fa-plane"></i>Перевозчики</button>
+            </form>
+            <form action="admin-users.html">
+                <button class="btn"><i class="fa-solid fa-circle-user"></i>Пользователи</button>
+            </form>
+        </div>
+        <div class="work-navbar-lower-buttons">
+            <button class="btn"><i class="fa-solid fa-circle-half-stroke"></i>Светлая/тёмная тема</button>
+            <button class="btn"><i class="fa-solid fa-right-from-bracket"></i>Выйти</button>
+        </div>
+    </section>
+
+    <section class="work-top-bar">
+        <div class="work-search-bar">
+            <h1>АДМИН ПАНЕЛЬ</h1>
+            <input class="orders-search-bar" type="search" id="searchInput" placeholder="Поиск по номеру, названию заказа">
+            <h1>ДОБРО ПОЖАЛОВАТЬ, TEST
+            <br>ВАША РОЛЬ - ADMIN
+            </h1>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </section>
+
+    <section class="admin-orders">
+        <div class="admin-orders-list">
+            <div class="work-pending-order-container">
+                <div class="work-order-image">
+                    <img src="img/blank-white-7sn5o1woonmklx1h.jpg" alt="">
+                </div>
+                <h1>ID</h1>
+                <h2 class="order-id">111111</h2>
+                <h1>ФИО:</h1>
+                <h2 class="order-name">Чаплин Александр Андреевич</h2>
+                <h1>Номер телефона:</h1>
+                <h2 class="order-phone">89608886952</h2>
+                <h1>Груз:</h1>
+                <h2 class="order-cargo">Доски</h2>
+                <h1>Точка отправки:</h1>
+                <h2 class="order-from">---</h2>
+                <h1>Точка прибытия:</h1>
+                <h2 class="order-to">---</h2>
+                <h1>Статус:</h1>
+                <h2>Активен</h2>
+                <h1>Перевозчик:</h1>
+                <h2>GRND-1 (Вазген Анатольевич)</h2>
+                <button class="edit-button">Редактировать</button>
+                <button class="edit-button">Удалить</button>
+            </div>
+        </div>
+        <div class="work-orders-location">
+            <div class="work-orders-location-container" style="overflow: auto; height: 85%;">
+                <h1 class="select-order-message">Выберите заказ</h1>
+                <div class="edit-form" style="display:none;">
+                    <form id="editOrderForm">
+                        <label for="edit-id">ID:</label>
+                        <input type="text" id="edit-id" readonly><br>
+                        <label for="edit-name">ФИО:</label>
+                        <input type="text" id="edit-name"><br>
+                        <label for="edit-phone">Номер телефона:</label>
+                        <input type="text" id="edit-phone"><br>
+                        <label for="edit-cargo">Груз:</label>
+                        <input type="text" id="edit-cargo"><br>
+                        <label for="edit-from">Точка отправки:</label>
+                        <input type="text" id="edit-from"><br>
+                        <label for="edit-to">Точка прибытия:</label>
+                        <input type="text" id="edit-to"><br>
+                        <input type="file" id="edit-image" accept="image/*">
+                        <select id="edit-status">
+                            <option value="status-pending">В обработке</option>
+                            <option value="status-active">Активен</option>
+                            <option value="status-ready">Завершён</option>
+                        </select>
+                        <select id="edit-carrier">
+                            <option value="carrier1">Перевозчик 1</option>
+                            <option value="carrier2">Перевозчик 2</option>
+                            <option value="carrier3">Перевозчик 3</option>
+                        </select><br>
+                        <button type="button" class="save-button" style="margin-top: 20px;">Сохранить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка отправлена</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <nav class="navbar-links">
+                <a href="index.html">Главная</a>
+                <a href="index.html #about">О нас</a>
+                <a href="index.html #footer">Контакты</a>
+            </nav>
+            <h1>ООО "Норд-Лайн"</h1>
+            <form action="login.html">
+                <h2><button>Войти</button></h2>
+            </form>
+        </nav>
+    </section>
+
+    <section class="form-sucess">
+        <h1>Заявка успешно отправлена</h1>
+        <h2>Наши специалисты уже начали обрабатывать вашу заявку.<br>В ближайшее время на вашу электронную почту будет выслан код для отслеживания.<br>Благодарим вас за обращение к нам!</h2>
+        <h3>Вы будете перенаправлены через:</h3>
+        <p id="countdown">10</p> <!-- Отобразится обратный отсчёт -->
+        <script>
+        let time = 10; // Задаём начальное время
+        const timer = setInterval(() => {
+        document.getElementById('countdown').textContent = time <= 0 
+            ? clearInterval(timer) // Останавливаем таймер, поскольку время истекло
+            : time--; // С каждой секундой уменьшаем время
+        }, 1000); // Интервал делаем одной секунды
+        </script>
+    </section>
+
+    <section class="footer" id="footer">
+        <div class="footer-upper-text">
+            <span class="upper-text-copyright">©2024 ООО “Норд-Лайн” <br>Дизайн, наполнение и функционал сайта выполнил: <br>Чаплин Александр Андреевич</span>
+            <span class="upper-text-contacts">coolhot@gmail.com<br>8-800-555-35-35<br>Волгоград, бульвар 30-Летия Победы, д. 74А офис 26А</span>
+            <span class="upper-text-company">ООО "Норд-Лайн"</span>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-lower-socials">
+            <nav class="footer-navbar-links">
+                <a href="index.html #welcome">Главная</a>
+                <a href="index.html #about">О нас</a>
+                <a href="index.html #footer">Контакты</a>
+            </nav>
+        </div>
+    </section>
+
+    <meta http-equiv="refresh" content="11;url=index.html" />  <!-- Переход на главную страницу -->
+</body>
+</html>

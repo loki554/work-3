@@ -1,0 +1,12 @@
+body {
+    filter: invert(95%) hue-rotate(180deg);
+    background: #474747;
+}
+
+img {
+    filter: invert(95%) hue-rotate(180deg);
+}
+
+#map {
+    filter: invert(95%) hue-rotate(180deg);
+}

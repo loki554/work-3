@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Статистика</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e29265e664.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<style>
+    ::placeholder {
+        color: #000;
+        opacity: .6;
+    }
+    body {
+        overflow: hidden;
+    }
+</style>
+
+<body>
+    <section class="work-navbar">
+        <div class="work-navbar-logo">
+            <img src="img/logo1.png" alt="Nord-Line">
+        </div>
+        <div class="work-navbar-upper-buttons">
+            <form action="work-portal-main.html">
+                <button class="btn"><i class="fa-solid fa-truck-fast"></i>Заказы</button>
+            </form>
+            <form action="work-portal-transporters.html">
+                <button class="btn"><i class="fa-solid fa-plane"></i>Перевозчики</button>
+            </form>
+            <div class="work-navbar-upper-button-active">
+                <button class="btn"><i class="fa-solid fa-chart-line"></i>Статистика</button>
+            </div>
+        </div>
+        <div class="work-navbar-lower-buttons">
+            <button class="btn"><i class="fa-solid fa-circle-half-stroke"></i>Светлая/тёмная тема</button>
+            <button class="btn"><i class="fa-solid fa-right-from-bracket"></i>Выйти</button>
+        </div>
+    </section>
+
+    <section class="work-top-bar">
+        <div class="work-search-bar">
+            <h1>СТАТИСТИКА</h1>
+            <input class="orders-search-bar" type="search" id="searchInput" placeholder="..." disabled style="cursor: not-allowed;">
+            <h1>ДОБРО ПОЖАЛОВАТЬ, TEST
+            <br>ВАША РОЛЬ - СОТРУДНИК
+            </h1>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </section>
+
+    <section class="work-statistics">
+        <div class="chart-container">
+            <canvas id="bar" style="width: 100%; height: 100%;"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="doughnut" style="width: 100%; height: 100%;"></canvas>
+        </div>
+        <div class="work-statistics-text">
+        </div>
+    </section>
+
+    <script src="chart-1.js"></script>
+    <script src="chart-2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1336 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*-------------HTML-------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*--------------------------index.html--------------------------*/
+
+/*-------------NAVBAR-------------*/
+
+.navbar {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: transparent;
+    margin: auto;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #505F98;
+    margin-right: 50px;
+    transition: 0.3s;
+}
+
+.navbar-links a:hover {
+    transition: 0.3s;
+    color: #7b96ff;
+}
+
+.navbar h1 {
+    position: relative;
+    font-size: 26px;
+    font-weight: 900;
+    color: #37447E;
+}
+
+.navbar h2 button {
+    position: relative;
+    font-size: 12px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #111B47;
+    width: 160px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.navbar h2 button:hover {
+    transition: 0.3s;
+    background-color: #283ea1;
+}
+
+/*-------------WELCOME-------------*/
+
+.main-welcome {
+    margin-bottom: 600px;
+}
+
+.main-welcome-bg {
+    height: 250px;
+}
+
+.main-bg-shape {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    transform: translateY(-60px);
+    z-index: -1;
+}
+
+.main-bg-truck {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    transform: translateY(-1200px);
+    transition: 0.5s;
+}
+
+.main-bg-truck:hover {
+    transition: 0.5s;
+    filter: saturate(150%);
+    filter: brightness(110%);
+}
+
+.main-welcome-text {
+    padding-left: 150px;
+}
+
+.main-welcome-text h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: #091133;
+    transition: 0.5s;
+}
+
+.main-welcome-text h1:hover {
+    transition: 0.5s;
+    text-shadow: #091133 1px 1px;
+}
+
+.main-welcome-text div {
+    font-size: 18px;
+    font-weight: 400;
+    color: #505F98;
+    line-height: 25px;
+    margin-top: 30px;
+    width: 543px;
+    text-wrap: wrap;
+    transition: 0.5s;
+}
+
+.main-welcome-text div:hover {
+    transition: 0.5s;
+    color: #7b96ff;
+}
+
+.main-welcome-uppper-buttons {
+    position: absolute;
+    display: flex;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.upper-login-btn {
+    width: 190px;
+    height: 36px;
+    background-color: #111B47;
+    font-size: 16px;
+    color: #fff;
+    margin-right: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upper-login-btn:hover {
+    transition: 0.3s;
+    background-color: #283ea1;
+}
+
+.upper-learn-more-btn {
+    width: 190px;
+    height: 36px;
+    background-color: transparent;
+    border-width: 2px;
+    border-color: #091133;
+    font-size: 16px;
+    color: #091133;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upper-learn-more-btn:hover {
+    transition: 0.3s;
+    border-color: #c2cdff;
+    color: #283ea1;
+}
+
+/*-------------ABOUT-------------*/
+
+.main-about {
+    margin-bottom: 450px;
+}
+
+.main-about-bg {
+    height: 30px;
+}
+
+.about-bg-warehouse {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    transition: 0.5s;
+}
+
+.about-bg-warehouse:hover {
+    transition: 0.5s;
+    filter: saturate(150%);
+    filter: hue-rotate(10deg);
+    filter: brightness(110%);
+}
+
+.main-about-text {
+    padding-left: 250px;
+}
+
+.main-about-text h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #091133;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+.main-about-text h1:hover {
+    transition: 0.5s;
+    text-shadow: #091133 1px 1px;
+    padding-left: 6px;
+}
+
+.main-about-text div {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6F7CB2;
+    line-height: 25px;
+    margin-top: 30px;
+    width: 581px;
+    text-wrap: wrap;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.main-about-text div:hover {
+    transition: 0.5s;
+    color: #7b96ff;
+    padding-left: 4px;
+}
+
+.main-about-cards {
+    padding-left: 250px;
+    position: absolute;
+    display: flex;
+}
+
+.about-card {
+    margin-right: 30px;
+}
+
+.about-card img {
+    transition: 0.3s;
+}
+
+.about-card img:hover {
+    transition: 0.3s;
+    transform: translateX(10px);
+}
+
+.about-card h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #091133;
+    transition: 0.3s;
+}
+
+.about-card h1:hover {
+    transition: 0.3s;
+    transform: translateX(10px);
+    color: #2c3d8b;
+}
+
+.about-card div {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5D6970;
+    line-height: 18px;
+    margin-top: 15px;
+    width: 300px;
+    text-wrap: wrap;
+    transition: 0.3s;
+}
+
+.about-card div:hover {
+    transition: 0.3s;
+    transform: translateX(10px);
+    color: #7b96ff;
+}
+
+/*-------------ADVANTAGES-------------*/
+
+.advantage-block {
+    display: grid;
+    align-items: center; 
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 200px;
+    padding-left: 150px;
+    transition: 0.8s;
+}
+
+.advantage-block:hover {
+    column-gap: 150px;
+}
+
+.advantage-img {
+    transition: 0.5s;
+}
+
+.advantage-img:hover {
+    transition: 0.5s;
+    filter: saturate(130%);
+    filter: brightness(105%);
+}
+
+.advantage-text {
+    width: 650px;
+}
+
+.advantage-text h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #091133;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.advantage-text h1:hover {
+    transition: 0.5s;
+    text-shadow: #091133 1px 1px;
+}
+
+.advantage-text a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6F7CB2;
+    line-height: 26px;
+    transition: 0.5s;
+}
+
+.advantage-text a:hover {
+    transition: 0.5s;
+    color: #7b96ff;
+}
+
+/*-------------FORM-------------*/
+
+.main-form {
+    position: relative;
+    text-align: center;
+    margin-bottom: -3px;
+}
+
+.main-form-bg img {
+    position: relative;
+    width: 100%;
+}
+
+.form-bg-transparent {
+    filter: opacity(30%);
+}
+
+.main-form-text {
+    width: 600px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-1000px);
+}
+
+.main-form-text h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #091133;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.main-form-text h1:hover {
+    transition: 0.5s;
+    text-shadow: #091133 1px 1px;
+    font-size: 40px;
+}
+
+.main-form-text a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #6F7CB2;
+    line-height: 26px;
+    transition: 0.5s;
+}
+
+.main-form-text a:hover {
+    transition: 0.5s;
+    color: #7b96ff;
+    font-size: 16.5px;
+}
+
+.main-form-form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-inputs {
+    width: 99vw;
+    position: relative;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.form-inputs input {
+    width: 530px;
+    height: 50px;
+    margin-bottom: 22px;
+    background-color: #111B47;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.form-inputs input:hover {
+    transition: 0.3s;
+    background-color: #1e2c70;
+}
+
+.form-inputs textarea {
+    width: 530px;
+    height: 225px;
+    resize: none;
+    background-color: #111B47;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.form-inputs textarea:hover {
+    transition: 0.3s;
+    background-color: #1e2c70;
+}
+
+.form-inputs a {
+    font-size: 16px;
+    font-weight: 400;
+    color: #5D6970;
+    margin-top: 15px;
+}
+
+.form-inputs button {
+    width: 190px;
+    height: 32px;
+    margin-top: 15px;
+    background: #111B47;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-inputs button:hover {
+    transition: 0.3s;
+    background-color: #283ea1;
+}
+
+/*-------------FOOTER-------------*/
+
+.footer {
+    width: 100%;
+    height: 224px;
+    background: #E7ECFF;
+}
+
+.upper-text-company {
+    font-size: 26px;
+    font-weight: 900;
+    color: #37447E;
+    display: table;
+    margin: 0 auto;
+    transform: translateY(-70px);
+}
+
+.upper-text-copyright {
+    font-size: 14px;
+    font-weight: 400;
+    color: #939EA4;
+    line-height: 36px;
+    display: inline-block;
+    padding-left: 150px;
+    padding-top: 30px;
+}
+
+.upper-text-contacts {
+    font-size: 14px;
+    font-weight: 400;
+    color: #939EA4;
+    line-height: 36px;
+    padding-top: 30px;
+    padding-right: 150px;
+    float: right;
+    text-align: right;
+}
+
+.footer-divider {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 84.3%;
+    height: 2px;
+    background: #CDD1D4;
+    transform: translateY(-14px);
+}
+
+.footer-lower-socials {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: transparent;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-decoration: none;
+}
+
+.footer-navbar-links a {
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #505F98;
+    margin: 20px;
+}
+
+
+
+/*--------------------------form-sucess.html--------------------------*/
+
+
+
+.form-sucess {
+    height: 560px;
+    text-align: center;
+}
+
+.form-sucess h1 {
+    font-size: 36px;
+    font-weight: 500;
+    color: #1e2c70;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    padding-top: 200px;
+}
+
+.form-sucess h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #505F98;
+    margin-top: 15px;
+}
+
+.form-sucess h3 {
+    padding-top: 60px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #091133;
+    margin-top: 15px;
+    text-decoration: underline;
+}
+
+.form-sucess p {
+    font-size: 24px;
+    font-weight: 800;
+    color: #091133;
+    margin-top: 15px;
+}
+
+
+
+/*--------------------------login.html--------------------------*/
+
+
+
+.login {
+    position: relative;
+    height: 700px;
+}
+
+.login-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-text h1 {
+    position: absolute;
+    font-size: 36px;
+    font-weight: 800;
+    color: #37447E;
+    padding-top: 450px;
+}
+
+.login-bg {
+    position: relative;
+    filter: opacity(30%);
+    z-index: -1;
+}
+
+.login-inputs {
+    width: 99vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.login-inputs input {
+    transform: translateY(-400px);
+}
+
+.input-login input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 22px;
+    background-color: #111B47;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.input-login input:hover {
+    transition: 0.3s;
+    background-color: #1e2c70;
+}
+
+.input-password input {
+    width: 400px;
+    height: 50px;
+    margin-bottom: 22px;
+    background-color: #111B47;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.input-password input:hover {
+    transition: 0.3s;
+    background-color: #1e2c70;
+}
+
+.login-button {
+    width: 99vw;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    transform: translateY(-400px);
+}
+
+.login-button button {
+    width: 190px;
+    height: 32px;
+    margin-top: 15px;
+    background: #111B47;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-button button:hover {
+    transition: 0.3s;
+    background-color: #283ea1;
+}
+
+
+
+/*--------------------------work-portal-main.html--------------------------*/
+
+
+
+.work-navbar {
+    position: fixed;
+    height: 100vh;
+    width: 35vh;
+    border-right: 2px solid #a8a8a880;
+    display: table-cell;
+    text-align: center;
+}
+
+.work-navbar-logo {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.work-navbar-upper-buttons {
+    position: relative;
+}
+
+.work-navbar-upper-buttons button {
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    color: #6B6B6B;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-navbar-upper-buttons button:hover {
+    background-color: #dadada;
+    transition: 0.2s;
+}
+
+.work-navbar-upper-buttons button i {
+    padding-right: 20px;
+}
+
+.work-navbar-upper-button-active button {
+    background-color: #0048ff;
+    color: #fff;
+    transition: 0.2s;
+}
+
+.work-navbar-upper-button-active button:hover {
+    background-color: #0035b9;
+    transition: 0.2s;
+}
+
+.work-navbar-lower-buttons {
+    border-top: 2px solid #a8a8a880;
+    position: absolute;
+    bottom: 0;
+    width: 35vh;
+    height: 25vh;
+    padding-top: 60px;
+}
+
+.work-navbar-lower-buttons button {
+    width: 80%;
+    height: 50px;
+    background: transparent;
+    border-radius: 10px;
+    border: none;
+    color: #6B6B6B;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    padding: 16px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-navbar-lower-buttons button:hover {
+    background-color: #dadada;
+    transition: 0.2s;
+}
+
+.work-navbar-lower-buttons button i {
+    padding-right: 20px;
+}
+
+.work-top-bar {
+    position: fixed;
+    width: 90%;
+    height: 12vh;
+    margin-left: 35vh;
+    border-bottom: 2px solid #a8a8a880;
+}
+
+.work-search-bar {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-right: 150px;
+}
+
+.work-search-bar h1 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #6B6B6B;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+.work-search-bar input {
+    width: 680px;
+    height: 45px;
+    border: none;
+    border-radius: 15px;
+    background-color: #EFEFEF;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+.work-search-bar i {
+    transform: scale(230%);
+    color: #0048ff;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.work-search-bar i:hover {
+    color: #0035b9;
+    transition: 0.2s;
+}
+
+.work-order-type-bar {
+    position: fixed;
+    width: 90%;
+    height: 10vh;
+    margin-top: 10vh;
+    margin-left: 35vh;
+    border-bottom: 2px solid #a8a8a880;
+    padding-right: 150px;
+}
+
+.work-order-type {
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work-order-type h1 {
+    font-size: 20px;
+    font-weight: 800;
+    color: #000;
+}
+
+.work-order-type-button {
+    width: 480px;
+    height: 45px;
+    background-color: #EFEFEF;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.work-order-type-button button {
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-order-type-button button:hover {
+    background-color: #dadada;
+    transition: 0.2s;
+}
+
+.work-order-type-button-active button {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 150px;
+    height: 35px;
+    transition: 0.2s;
+}
+
+.work-order-type-button-active button:hover {
+    background-color: #ffffff;
+    transition: 0.2s;
+}
+
+.work-order-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    column-gap: 30px;
+}
+
+.work-order-alphabet-filter {
+    width: 90px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #dadada;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B6B6B;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-order-alphabet-filter:hover {
+    background-color: #dfeaff;
+    transition: 0.2s;
+}
+
+.work-order-alphabet-filter i {
+    padding-right: 16px;
+    margin-left: -18px;
+}
+
+.work-order-dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.work-order-dropdown-button {
+    width: 140px;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px #dadada;
+    font-size: 14px;
+    font-weight: 500;
+    color: #6B6B6B;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-order-dropdown-button i {
+    padding-right: 10px;
+}
+
+.work-order-dropdown-menu:hover .work-order-dropdown-button {
+    background-color: #dfeaff;
+    transition: 0.2s;
+}
+
+.work-orders {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    margin-top: 20vh;
+    margin-left: 35vh;
+}
+
+.work-orders-list {
+    display: block;
+    position: fixed;
+    width: 39.6%;
+    height: 80%;
+    overflow-y: auto;
+}
+
+.work-order-container {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid #a8a8a880;
+}
+
+.work-order-image {
+    position: relative;
+}
+
+.work-order-image img {
+    position: relative;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #a8a8a880;
+    margin: 8px;
+    max-height:100%;
+    max-width:100%;
+    object-fit: fill;
+}
+
+.work-order-basic-info {
+    display: flex;
+}
+
+.work-order-name-and-id {
+    position: relative;
+    width: 75%;
+    height: 53%;
+    padding: 5px;
+}
+
+.work-order-name-and-id h1 {
+    text-wrap: wrap;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.work-order-name-and-id h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.work-order-info {
+    position: relative;
+    padding: 10px;
+}
+
+.work-order-info h2 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #000;
+}
+
+.work-order-info h1 {
+    width: 100%;
+    height: 3vh;
+    font-size: 18px;
+    font-weight: 400;
+    color: #757575;
+}
+
+.work-order-copy-id-button {
+    margin-left: 10px;
+    background: transparent;
+    border: none;
+    color: #757575;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-order-copy-id-button:hover {
+    color: #1e2c70;
+    transition: 0.2s;
+}
+
+.work-order-info button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #0048ff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-order-info button:hover {
+    background-color: #0035b9;
+    transition: 0.2s;
+}
+
+html, body, #map {
+    width: 100%; height: 100%; padding: 0; margin: 0;
+}
+
+.work-orders-location {
+    position: relative;
+    float: right;
+    width: 56%;
+    height: 100%;
+}
+
+.work-orders-location-container {
+    position: relative;
+    background-color: #f2f2f2;
+    width: 87vh;
+    height: 77vh;
+    margin: 12px;
+    border-radius: 15px;
+}
+
+.work-orders-location-container h1 {
+    position: fixed;
+    font-size: 32px;
+    font-weight: 400;
+    color: #757575;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+/*--------------------------work-portal-pending.html--------------------------*/
+
+
+
+.work-pending-order-container {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #a8a8a880;
+}
+
+.work-pending-order-container h1 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #111B47;
+    padding-bottom: 5px;
+}
+
+.work-pending-order-container h2 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+.work-pending-order-container button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #0048ff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.work-pending-order-container button:hover {
+    background-color: #0035b9;
+    transition: 0.2s;
+}
+
+.edit-form {
+    padding: 20px;
+}
+
+#editOrderForm label {
+    font-size: 24px;
+    font-weight: 500;
+    color: #091133;
+    display: block;
+}
+
+#editOrderForm input {
+    width: 80vh;
+    height: 50px;
+    color: #757575;
+    border: none;
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    padding: 2px;
+}
+
+#editOrderForm select {
+    width: 30vh;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    color: #0035b9;
+    border: none;
+}
+
+#editOrderForm button {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    background-color: #0048ff;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#editOrderForm button:hover {
+    background-color: #0035b9;
+    transition: 0.2s;
+}
+
+
+
+/*--------------------------work-portal-transporters.html--------------------------*/
+
+
+
+.work-transporters {
+    position: relative;
+    padding: 20px;
+    width: calc(100% - 35vh);
+    margin-left: 35vh;
+}
+
+.transporters-list {
+    margin-top: 15vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    height: 87vh;
+    overflow-y: auto;
+}
+
+.transporters-container {
+    min-width: 450px;
+    text-align: center;
+    height: 260px;
+    border: 2px solid #a8a8a880;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.transporters-rating i {
+    color: #0035b9;
+}
+
+.transporters-image img {
+    position: relative;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #a8a8a880;
+    margin: 8px;
+    max-height:100%;
+    max-width:100%;
+    object-fit: fill;
+}
+
+.transporters-container h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #091133;
+}
+
+.transporters-container h2 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #111B47;
+}
+
+
+
+/*--------------------------work-portal-stats.html--------------------------*/
+
+
+
+.work-statistics {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    margin-top: 12vh;
+    margin-left: 35vh;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.chart-container {
+    max-width: 700px;
+    max-height: 700px;
+}
+
+
+
+/*--------------------------admin-orders.html--------------------------*/
+
+
+
+.admin-orders {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    margin-top: 12vh;
+    margin-left: 35vh;
+}
+
+.admin-orders-list {
+    display: block;
+    position: fixed;
+    width: 39.6%;
+    height: 88%;
+    overflow-y: auto;
+}
+
+
+
+/*--------------------------admin-transporters.html--------------------------*/
+/*--------------------------admin-users.html--------------------------*/
+
+
+
+.admin-users {
+    position: fixed;
+    width: 90%;
+    height: 100%;
+    margin-top: 12vh;
+    margin-left: 35vh;
+}
+
+.admin-users-list {
+    display: block;
+    position: fixed;
+    width: 39.6%;
+    height: 88%;
+    overflow-y: auto;
+}
+
+.user-container {
+    position: relative;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 2px solid #a8a8a880;
+}

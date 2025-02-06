@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Администратор - Перевозчики</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="https://kit.fontawesome.com/e29265e664.js" crossorigin="anonymous"></script>
+    <script src="script-pending.js"></script>
+</head>
+
+<style>
+::placeholder {
+    color: #000;
+    opacity: .6;
+}
+body {
+    overflow: hidden;
+}
+</style>
+
+<body>
+    <section class="work-navbar">
+        <div class="work-navbar-logo">
+            <img src="img/logo1.png" alt="Nord-Line">
+        </div>
+        <div class="work-navbar-upper-buttons">
+            <form action="admin-orders.html">
+                <button class="btn"><i class="fa-solid fa-truck-fast"></i>Все заказы</button>
+            </form>
+            <div class="work-navbar-upper-button-active">
+                <button class="btn"><i class="fa-solid fa-plane"></i>Перевозчики</button>
+            </div>
+            <form action="admin-users.html">
+                <button class="btn"><i class="fa-solid fa-circle-user"></i>Пользователи</button>
+            </form>
+        </div>
+        <div class="work-navbar-lower-buttons">
+            <button class="btn"><i class="fa-solid fa-circle-half-stroke"></i>Светлая/тёмная тема</button>
+            <button class="btn"><i class="fa-solid fa-right-from-bracket"></i>Выйти</button>
+        </div>
+    </section>
+
+    <section class="work-top-bar">
+        <div class="work-search-bar">
+            <h1>АДМИН ПАНЕЛЬ</h1>
+            <input class="orders-search-bar" type="search" id="searchInput" placeholder="Поиск по номеру, названию заказа">
+            <h1>ДОБРО ПОЖАЛОВАТЬ, TEST
+            <br>ВАША РОЛЬ - ADMIN
+            </h1>
+            <i class="fa-solid fa-circle-user"></i>
+        </div>
+    </section>
+
+    <section class="admin-users">
+        <div class="admin-users-list">
+            <div class="work-pending-order-container">
+                <div class="work-order-image">
+                    <img src="img/images (4).jpg" alt="">
+                </div>
+                <h1>ID</h1>
+                <h2 class="transporters-id">GRND-1</h2>
+                <h1>ФИО</h1>
+                <h1 class="transporters-name">Чаплин Александр Андреевич</h1>
+                <h1>Тип</h1>
+                <h2 class="transporters-type">Наземный</h2>
+                <h1>Транспорт</h1>
+                <h2 class="transporters-vehicle">Volkswagen Polo V</h2>
+                <button class="">Редактировать</button>
+                <button class="">Удалить</button>
+            </div>
+        </div>
+        <div class="work-orders-location">
+            <div class="work-orders-location-container" style="overflow: auto; height: 85%;">
+                <div class="edit-form">
+                    <form id="editOrderForm">
+                        <input type="file" id="edit-image" accept="image/*">
+                        <label for="edit-id">ID:</label>
+                        <input type="text" id="edit-id" readonly><br>
+                        <label for="edit-name">ФИО:</label>
+                        <input type="text" id="edit-name"><br>
+                        <label for="edit-name">Транспорт:</label>
+                        <input type="text" id="edit-name"><br>
+                        <select id="edit-status">
+                            <option value="status-pending">Наземный</option>
+                            <option value="status-active">Воздушный</option>
+                            <option value="status-active">Водный</option>
+                        </select><br>
+                        <button type="button" class="save-button" style="margin-top: 20px;">Добавить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

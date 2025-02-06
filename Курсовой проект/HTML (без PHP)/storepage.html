@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Держи Волну. Ассортимент</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png" type="image/png">
+    <script src="script.js"></script>
+</head>
+<body>
+    <section class="header">
+        <nav class="navbar">
+            <a href="index.html">Главная</a>
+            <a href="index.html #description">О нас</a>
+            <a href="index.html #production">Производство</a>
+            <a href="index.html #why-us">Гарантия качества</a>
+            <a href="index.html #consultation">Консультация</a>
+            <a href="index.html #contacts">Контакты</a>
+        </nav>
+    </section>
+
+    <section class="store-main">
+        <h1>Держи Волну</h1>
+        <p>Особые предложения</p>
+    </section>
+
+
+    <section class="separator-store" id="catalog">
+    </section>
+
+
+    <section class="search-store" id="search">
+        <input type="text" id="searchbar" name="searchbar" placeholder="Поиск" onkeyup="search()">
+        <select id="filter">
+            <option value="" disabled selected>Фильтр</option>
+            <option value="aviable">Есть в наличии</option>
+            <option value="not-aviable">Нет в наличии</option>       
+        </select>
+    </section>
+
+
+    <section class="catalog-store" id="blur">
+        <div class="catalog-row">
+            <div class="catalog-item" id="aviable">
+                <div class="catalog-item-img">
+                    <img src="img/board1.jpg">
+                </div>
+                <h1>Aqua Inc 6’0, 7’0</h1>
+                <a>Новые софты для серфинга от бренда Аква инк. Доступны размеры: 6’0 и 7’0 в двух цветах: зеленый и розовый.</a>
+                <button class="store-btn" onclick="toggle()">Купить<br>38,900₽</button>
+            </div>
+            <div class="catalog-item" id="aviable">
+                <div class="catalog-item-img">
+                    <img src="img/board2.jpg">
+                </div>
+                <h1>Suns Beetle 7’0-9’0</h1>
+                <a>Классический шейп, низкие рейлы и вытянутый хвост позволяют использовать доску в разных условиях: от волн по колено до дабл оверхэд.</a>
+                <button class="store-btn" onclick="toggle()">Купить<br>74,000₽</button>
+            </div>
+            <div class="catalog-item" id="aviable">
+                <div class="catalog-item-img">
+                    <img src="img/board3.jpg">
+                </div>
+                <h1>WSGS 6’8”</h1>
+                <a>Под заказ!<br>Объемные доски идеально подходят под волны. В комплекте плавники : 3 FCS М5.</a>
+                <button class="store-btn" onclick="toggle()">Купить<br>40,000₽</button>
+            </div>
+            <div class="catalog-item" id="aviable">
+                <div class="catalog-item-img">
+                    <img src="img/board4.jpg">
+                </div>
+                <h1>Jimmy Lewis 6’8</h1>
+                <a>Rocket – классический ретро фиш, ярко выраженная фиш корма, два мощных и крупных боковых плавника.</a>
+                <button class="store-btn" onclick="toggle()">Купить<br>95,000₽</button>
+            </div>
+            <div class="catalog-item" id="aviable">
+                <div class="catalog-item-img">
+                    <img src="img/board5.jpg">
+                </div>
+                <h1>SUP Jimmy Lewis Searcher 12’6</h1>
+                <a>Searcher 12’6- самый стабильный и быстрый сап для туристических походов по рекам и озерам.</a>
+                <button class="store-btn" onclick="toggle()">Купить<br>160,700₽</button>
+            </div>
+            <div class="catalog-item" id="not-aviable">
+                <div class="catalog-item-img">
+                    <img src="img/board6.jpg">
+                </div>
+                <h1>WUBBA LUBBA DUB DUB 4’6</h1>
+                <a>Шустрый и маневренный вейксерф для агрессивных сетов на волне!</a>
+                <button class="store-btn-deny">Нет в наличии</button>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="popup">
+        <h2>Заказ доски</h2>
+        <p>Для заказа данной доски и получения дополнительной информации о товаре звоните по номеру: <br>
+        <br>
+        8-800-555-35-35 <br>
+        Звонки принимаются с 08:00 по 22:00. <br>
+        <br>
+        Также можете заказать консультацию в самом низу главной страницы.
+        </p>
+        <button href="#" onclick="toggle()">Продолжить смотреть ассортимент</button>
+        <form action="index.html #consultation">
+            <button>Заказать консультацию</button>
+        </form>
+    </div>
+
+
+    <section class="footer">
+        <a>Чаплин Александр Андреевич <br>
+        ИС-4-2 <br>
+        2024 <br>
+        Все права защищены</a>
+    </section>
+    
+</body>
+</html>
